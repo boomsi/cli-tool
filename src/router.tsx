@@ -10,22 +10,29 @@ interface IRoutes {
 const routes: IRoutes[] = [
   {
     path: '/',
-    redirect: '/login',
+    redirect: '/index',
     exact: true,
     key: 'redirect'
   },
   {
-    path: '/login',
-    component: 'login',
+    path: '/index',
+    component: 'index',
     name: '登录',
-    key: 'login',
+    key: 'index',
     exact: true
   },
   {
-    path: '/registry',
-    component: 'registry',
-    name: '注册',
-    key: 'registry',
+    path: '/webpack',
+    component: 'webpack',
+    name: 'Webpack',
+    key: 'webpack',
+    exact: true
+  },
+  {
+    path: '/vite',
+    component: 'vite',
+    name: 'Vite',
+    key: 'vite',
     exact: true
   }
 ];
