@@ -1,5 +1,5 @@
-import Webpack from '@/assets/Webpack.svg';
-import Vite from '@/assets/Vite.svg';
+import Webpack from '@/assets/webpack.svg';
+import Vite from '@/assets/vite.svg';
 
 export interface IPackageItem {
   name: string;

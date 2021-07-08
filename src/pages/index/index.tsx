@@ -20,6 +20,10 @@ function Home() {
         return <Webpack />;
     }
   };
+	
+	const changeSelect = (value: string) => {
+		setType(value)
+	}
 
   return (
     <div className="index-wrapper">
@@ -31,7 +35,7 @@ function Home() {
             <Box component="div">
               <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
                 {PACKAGE_LIST.map((item: IPackageItem) => (
-                  <Button key={item.name} startIcon={<img className="index-logo" src={item.icon} alt="" />}>
+                  <Button onClick={() => changeSelect(item.name)} key={item.name} startIcon={<img className="index-logo" src={item.icon} alt="" />}>
                     <NavLink to={item.route}>{item.name}</NavLink>
                   </Button>
                 ))}
